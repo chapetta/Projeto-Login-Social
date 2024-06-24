@@ -73,10 +73,18 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="520dp" />
 
+        <TextView
+            android:id="@+id/forgot_password_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="@string/forgot_password"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            android:textStyle="bold" />
+
 
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
