@@ -36,6 +36,9 @@
             android:layout_marginBottom="12dp"
             android:enabled="true"
             android:hint="@string/email"
+            app:helperText="@string/email_warning"
+            app:helperTextEnabled="false"
+            app:helperTextTextColor="@color/red"
             app:startIconDrawable="@drawable/email_icon_24dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -45,6 +48,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/password_text_input_layout"
             android:layout_width="match_parent"
@@ -52,6 +56,9 @@
             android:layout_marginBottom="12dp"
             android:enabled="true"
             android:hint="@string/password"
+            app:helperText="@string/password_warning"
+            app:helperTextEnabled="false"
+            app:helperTextTextColor="@color/red"
             app:endIconMode="password_toggle"
             app:endIconDrawable="@drawable/visibility_icon_24dp"
             app:startIconDrawable="@drawable/password_icon_24dp">
