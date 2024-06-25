@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         email = findViewById(R.id.email_text_input_layout)
         password = findViewById(R.id.password_text_input_layout)
         button = findViewById(R.id.login_button)
+        email.helperText = null
+        password.helperText = null
+
 
         email.editText?.addTextChangedListener{
             validateInputs()
