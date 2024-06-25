@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -47,6 +48,8 @@ class MainActivity : AppCompatActivity() {
                 password.helperText = null
             }
             validateInputs()
+            sucessfulLogin()
+
         }
 
     }
@@ -61,6 +64,10 @@ class MainActivity : AppCompatActivity() {
         val regex = Regex("^[A-Za-z0-9._-]+@[A-Za-z]+\\.[A-Za-z]+\$")
 
         return regex.matches(email)
+    }
+
+    private fun sucessfulLogin() {
+        Snackbar.make(button, getString(R.string.login_succeeded), Snackbar.LENGTH_LONG).show()
     }
 
 }
